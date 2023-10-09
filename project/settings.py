@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     # local
     'apps.core.apps.CoreConfig',
     'apps.accounts.apps.AccountsConfig',
+    'apps.cv_generator.apps.CvGeneratorConfig',
 ]
 
 MIDDLEWARE = [

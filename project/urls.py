@@ -16,8 +16,13 @@ Including another URLconf
 """
 # Django
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('i18n/', include('django.conf.urls.i18n')),
+
+    path('', include('apps.core.urls')),
+    path('accounts/', include('apps.accounts.urls')),
+    path('cv_generator/', include('apps.cv_generator.urls')),
 ]
