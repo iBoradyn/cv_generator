@@ -177,6 +177,14 @@ $danger-transparent: #dc354590;
       transition: max-height .2s linear;
       overflow: hidden;
 
+      .sub-item {
+        border-top: 1px dotted $black;
+
+        &:first-child {
+          border-top: none;
+        }
+      }
+
       .sub-link {
         display: block;
         color: $black;

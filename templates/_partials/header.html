@@ -12,26 +12,34 @@
   <div class="sidebar">
     <nav class="side-navbar">
       <!-- Top section start -->
-      <div class="nav-item">
-        <a class="nav-link" href="{% url 'core:index' %}">
-          <i class="fa-solid fa-home"></i>
-          {% trans 'Home' %}
+      <div class="nav-user">
+        <a href="#">
+          <img src="{{ request.user.photo.url }}" alt="{% trans 'Profile photo.' %}">
         </a>
+        <div class="nav-user-info">
+          <p>{{ request.user.username }}</p>
+        </div>
       </div>
       <!-- Top section end -->
 
       <!-- Middle section start -->
       <ul class="nav-list">
         <li class="nav-item">
+          <a class="nav-link" href="{% url 'core:index' %}">
+            <i class="fa-solid fa-home"></i>
+            {% trans 'Home' %}
+          </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="fa-solid fa-unlock"></i>
+            <i class="fa-solid fa-list"></i>
             {% trans 'Resume list' %}
           </a>
         </li>
         <li class="nav-item">
           <div class="dropdown">
             <a class="nav-link" href="#">
-              <i class="fa-solid fa-seedling"></i>
+              <i class="fa-solid fa-file-circle-plus"></i>
               {% trans 'Generate resume' %}
             </a>
             <div class="sub-items-collapse-icon">
@@ -41,19 +49,16 @@
           <ul id="id_sl_watering_system" class="sub-nav-list">
             <li class="sub-item">
               <a class="sub-link" href="#">
-                <i class="fa-solid fa-calendar"></i>
                 {% trans 'Front End' %}
               </a>
             </li>
             <li class="sub-item">
               <a class="sub-link" href="#">
-                <i class="fa-solid fa-calendar"></i>
                 {% trans 'Back End' %}
               </a>
             </li>
             <li class="sub-item">
               <a class="sub-link" href="#">
-                <i class="fa-solid fa-calendar"></i>
                 {% trans 'Full Stack' %}
               </a>
             </li>

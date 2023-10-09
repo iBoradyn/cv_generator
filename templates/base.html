@@ -10,7 +10,7 @@
   <meta name="author" content="Igor Boradyn">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="keywords" content="cv generator">
+  <meta name="keywords" content="cv resume auto generator">
   <meta name="description" content="{% trans 'Application designed to create a resume for a programmer in Polish and English' %}">
 
   <!-- title -->
@@ -54,16 +54,10 @@
 
   <!-- Bootstrap -->
   <script src="{% static 'js/bootstrap.min.js' %}"></script>
-
+  <!-- jQuery -->
+  <script src="{% static 'js/jquery-3.7.0.min.js' %}"></script>
   <!-- Requests -->
-  <script src="{% static 'js/getCookie.js' %}"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        window.csrfToken = getCookie('csrftoken');
-    });
-  </script>
-  <script src="{% static 'js/sendRequest.js' %}"></script>
-
+  <script src="{% static 'js/ajax_settings.js' %}"></script>
   <!-- Sidebar -->
   <script src="{% static 'js/sidebar.js' %}"></script>
   <script src="{% static 'js/subNavList.js' %}"></script>

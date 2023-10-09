@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,eAAgB,CACd,QAAQ,CAAE,QAAQ,CAClB,UAAU,CAAE,KAAK,CAGnB,kBAAmB,CACjB,cAAc,CAAE,GAAG,CAGrB,YAAa,CACX,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,CAAC,CACT,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,GAAG",
+"sources": ["../scss/html_settings.scss"],
+"names": [],
+"file": "base.min.css"
+}

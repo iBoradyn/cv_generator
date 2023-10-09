@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% load i18n %}
 
-{% block header %} {# Hide navbar #} {% endblock %}
+{#{% block header %}#}
+  {# Hide navbar #}
+{#{% endblock %}#}
 
 {% block content %}
   <h1 class="text-center mt-3">{% trans 'Home' %}</h1>
@@ -12,23 +14,23 @@
     <div class="row">
       <div class="col-6">
         <a class="btn bg-light text-primary w-75 py-5 border border-secondary" href="#">
-          <i class="fa-solid fa-unlock h1"></i>
+          <i class="fa-solid fa-list h1"></i>
           <p class="h2 mt-3">{% trans 'Resume list' %}</p>
         </a>
       </div>
       <div class="col-6">
         <a class="btn bg-light text-primary w-75 py-5 border border-secondary" href="#">
-          <i class="fa-solid fa-seedling h1"></i>
+          <i class="fa-solid fa-file-circle-plus h1"></i>
           <p class="h2 mt-3">{% trans 'Generate resume' %}</p>
         </a>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-3"></div>
       <div class="col-6">
         <a class="btn bg-light text-primary w-75 py-5 border border-secondary" href="#">
-          <i class="fa-solid fa-unlock h1"></i>
+          <i class="fa-solid fa-user h1"></i>
           <p class="h2 mt-3">{% trans 'Account settings' %}</p>
         </a>
       </div>
