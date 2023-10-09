@@ -42,7 +42,7 @@ If the file is not imported into `base.scss`, it will be compiled as a separate 
 
 ## Project structure
 ```
-raspberry_mini_smart_home
+cv_generator
 │   .env
 │   requirements.txt
 │   requirements-dev.txt
