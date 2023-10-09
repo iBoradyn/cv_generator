@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block header %} {# Hide navbar #} {% endblock %}
+
+{% block content %}
+  <h1 class="text-center mt-3">{% trans 'Home' %}</h1>
+  <hr class="my-4">
+
+  <div class="container text-center">
+
+    <div class="row">
+      <div class="col-6">
+        <a class="btn bg-light text-primary w-75 py-5 border border-secondary" href="#">
+          <i class="fa-solid fa-unlock h1"></i>
+          <p class="h2 mt-3">{% trans 'Resume list' %}</p>
+        </a>
+      </div>
+      <div class="col-6">
+        <a class="btn bg-light text-primary w-75 py-5 border border-secondary" href="#">
+          <i class="fa-solid fa-seedling h1"></i>
+          <p class="h2 mt-3">{% trans 'Generate resume' %}</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <a class="btn bg-light text-primary w-75 py-5 border border-secondary" href="#">
+          <i class="fa-solid fa-unlock h1"></i>
+          <p class="h2 mt-3">{% trans 'Account settings' %}</p>
+        </a>
+      </div>
+      <div class="col-3"></div>
+    </div>
+
+  </div>
+{% endblock %}
+
+
