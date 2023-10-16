@@ -49,6 +49,10 @@ $danger-transparent: #dc354590;
   transform: rotate(0);
 }
 
+.d-none {
+  display: none;
+}
+
 .panel-body {
   display: flex;
   flex-direction: row;
